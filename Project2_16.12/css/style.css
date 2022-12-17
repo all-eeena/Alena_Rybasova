@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial;
+	background-color: #26252b;
+	color: white;
+}
+.container{
+	width: 1200px;
+	margin: 30px auto 30px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #413b47;
+	border-radius: 6px;
+	margin: 30px auto 30px;
+}
+.menu{
+	margin-right: 30px;
+}
+.menu>li{
+	display: inline-flex;
+	margin: 20px 15px;
+	font-size: 17px;
+}
+.logo{
+	color: #773ab5;
+	font-size: 30px;
+	font-weight: bold;
+	margin: auto 0;
+	margin-left: 30px;
+}
+
+main{
+	display: flex;
+}
+aside{
+	display: flex;
+	flex-direction: column;
+}
+.left-menu{
+	background-color: #413b47;
+	border-radius: 6px;
+}
+.vertical-menu{
+	list-style: none;
+	text-align: center;
+}
+.vertical-menu>li{
+	margin: 30px auto;	
+}
+.ad{
+	background-color: #413b47;
+	border-radius: 6px;
+	margin: 30px auto 30px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 250px;
+	display: flex;
+}
+.ad>div{
+	background-color: #9b92a8;
+	width: 180px;
+	height: 210px;
+	border-radius: 6px;
+	margin: auto;
+	align-items: center;
+}
+
+article{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 30px 30px;
+}
+.info{
+	background-color: #413b47;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.img{
+	background-color: #9b92a8;
+	width: 280px;
+	height: 300px;
+	border-radius: 6px;
+	margin: 25px;
+}
+.text{
+	padding-right: 20px;
+	margin: auto;
+	width: 70%;
+}
+
+.block2{
+	background-color: #413b47;
+	border-radius: 6px;
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 0;
+}
+.block2>div{
+	background-color: #9b92a8;
+	border-radius: 6px;
+	width: 140px;
+	height: 70px;	
+}
+
+.block3{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #413b47;
+	border-radius: 6px;
+	padding: 30px 0;
+}
+.little{
+	background-color: #9b92a8;
+	border-radius: 6px;
+	width: 140px;
+	height: 70px;	
+}
+.center{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	width: 380px;
+	height: 200px;
+	padding-top: 20px;
+}
+.center>div{
+	background-color: #9b92a8;
+	border-radius: 6px;
+	width: 140px;
+	height: 70px;
+}

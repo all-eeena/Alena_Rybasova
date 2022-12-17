@@ -1,0 +1,47 @@
+body{
+	background-color: #624f70;
+}
+
+.content{
+	width: 800px;
+	margin: auto;
+	padding: 10px;
+	background-color: #a583bd;
+}
+
+h1{
+	font-style: oblique;
+}
+h2{
+	font-weight: bold;
+}
+h3{
+	text-decoration: underline;
+}
+h4{
+	text-decoration: line-through;
+}
+
+span{
+	color: #eaa6f5;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	
+	border: 1px solid black;
+	width: 20px;
+	text-align: center;
+}
+
+hr{
+	color: #592670;
+}
+
+.form{
+	width: 164px;
+	margin: 0 auto;
+}
