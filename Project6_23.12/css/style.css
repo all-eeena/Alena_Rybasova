@@ -1,0 +1,115 @@
+*{
+
+    font-family: 'Laila', sans-serif;
+}
+.animation {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+}
+
+@keyframes loading {
+   0% {
+    border-radius: 0 0 0 0;
+    transform: rotate(0deg);
+   }
+   25% {
+    border-radius: 50% 0 0 0;
+    transform: rotate(45deg);
+   }
+   50% {
+    border-radius: 50% 50% 0 0;
+    transform: rotate(90deg);
+   }
+   75% {
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(135deg);
+   }
+   100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(180deg);
+   }
+}
+
+.loading_content {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(125, 26, 255);
+    animation: loading 2s ease-out infinite alternate;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 10px solid rgba(242, 40, 174, 0.496);
+    border-radius: 50%;
+    border-top-color: rgb(253, 31, 179);
+    animation: loader 2s ease-in-out infinite;
+    margin-left: 50px;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container_ring {
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.ring {
+    width: 200px; 
+    height: 200px;
+    border: 0px solid black;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring:nth-child(1) {
+    border-bottom-width: 8px;
+    border-color: rgb(236, 28, 143);
+    animation: rotate1 2s linear infinite;
+}
+.ring:nth-child(2) {
+    border-right-width: 8px;
+    border-color: rgb(28, 225, 219);
+    animation: rotate2 2s linear infinite;
+}
+.ring:nth-child(3) {
+    border-left-width: 8px;
+    border-color: rgb(191, 25, 229);
+    animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate1 {
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate3 {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
